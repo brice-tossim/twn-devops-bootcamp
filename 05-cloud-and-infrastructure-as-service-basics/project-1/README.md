@@ -112,7 +112,7 @@ scp build/libs/<artifact-name>.jar uadmin@<droplet_ip_address>:/tmp/app.jar
 
 Note: I renamed the artifact to `app.jar` for simplicity, but you can keep the original name if you want.
 
-## Move the artifact, change the ownership and run the application
+## Move the artifact and change the ownership
 
 Now that the artifact is uploaded, we can move it to the `app` directory and change the ownership to `appuser` so that it can run the application without any permission issue.
 
@@ -159,9 +159,13 @@ uadmin@<droplet_ip_address>: Permission denied (publickey).
 ```
 
 If you encounter this issue, it might be due to the fact that you haven't set the right public key in the `authorized_keys` file of the `uadmin` user, or you haven't set the right permissions for the `.ssh` directory and the `authorized_keys` file.
+
 Make sure to set them correctly as mentioned in the steps above.
 
 - **Problem 2: Application not accessible in the browser using the right URL + port**
 
-Everything seems to be working fine, the application is running without any issue but when you try to access it in the browser using the right URL + port, it doesn't work. This might be due to the fact that the port on which the application is running is not open in the firewall.
+Everything seems to be working fine, the application is running without any issue but when you try to access it in the browser using the right URL + port, it doesn't work.
+
+This might be due to the fact that the port on which the application is running is not open in the firewall.
+
 Make sure to open the port on which the application is running in the firewall settings (In the inbound rules) from the DigitalOcean dashboard.
