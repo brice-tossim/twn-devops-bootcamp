@@ -1,4 +1,4 @@
-# Create a server and run a java application on DigitalOcean
+# Create server and deploy application on DigitalOcean
 
 ## Overview
 
@@ -29,7 +29,7 @@ Finally, I built the application locally, uploaded the generated JAR file to the
 - **Storage:** 10 GB SSD
 - **Region:** New York (NYC3)
 
-## Server Setup
+## Server setup
 
 Connect to the server using SSH. For security best practices, configure the firewall so that SSH is only allowed from your own IP address
 
@@ -149,7 +149,7 @@ or
 sudo ss -lntp | grep java
 ```
 
-## Some issues that I found during the process and how I fixed them
+## Troubleshooting
 
 - **Problem 1: Permission denied when trying to connect with "uadmin" user using SSH**
 
@@ -162,9 +162,9 @@ If you encounter this issue, it might be due to the fact that you haven't set th
 
 Make sure to set them correctly as mentioned in the steps above.
 
-- **Problem 2: Application not accessible in the browser using the right URL + port**
+- **Problem 2: Application not accessible in the browser using the right IP + port**
 
-Everything seems to be working fine, the application is running without any issue but when you try to access it in the browser using the right URL + port, it doesn't work.
+Everything seems to be working fine, the application is running without any issue but when you try to access it in the browser using the right IP + port, it doesn't work.
 
 This might be due to the fact that the port on which the application is running is not open in the firewall.
 
