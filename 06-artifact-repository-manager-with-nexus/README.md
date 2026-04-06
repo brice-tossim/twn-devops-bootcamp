@@ -1,4 +1,4 @@
-# Run Nexus on Droplet and Publish Artifacts to Nexus
+# Run Nexus on Droplet and publish artifacts to Nexus
 
 ## Overview
 
