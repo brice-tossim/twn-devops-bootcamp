@@ -6,10 +6,10 @@ In this project, I configured and executed a Node.js application alongside a Mon
 
 ## Technologies Used
 
-- Containerization: Docker, Docker Compose
-- Database: MongoDB (mongo:7.0), Mongo Express
-- Runtime: Node.js
-- Scripting: Bash, JavaScript (MongoDB initialization)
+- **Containerization:** Docker, Docker Compose
+- **Database:** MongoDB (mongo:7.0), Mongo Express
+- **Runtime:** Node.js
+- **Scripting:** Bash, JavaScript (MongoDB initialization)
 
 ## Setup and Execution
 

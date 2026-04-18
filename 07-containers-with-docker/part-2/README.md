@@ -6,10 +6,10 @@ In this project, I provisioned a Linux server to run Nexus Repository Manager as
 
 ## Technologies Used
 
-- Repository Manager: Nexus (Containerized)
-- Containerization: Docker, Docker Compose
-- Cloud Provider: DigitalOcean
-- Operating System: Linux (Ubuntu 24.04 LTS x64)
+- **Repository Manager:** Nexus (Containerized)
+- **Containerization:** Docker, Docker Compose
+- **Cloud Provider:** DigitalOcean
+- **Operating System:** Linux (Ubuntu 24.04 LTS x64)
 
 ## Infrastructure Details
 

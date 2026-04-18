@@ -6,10 +6,10 @@ In this project, I configured the AWS CLI and used Docker to build, push, and pu
 
 ## Technologies Used
 
-- Cloud Provider: AWS
-- Container Registry: Amazon ECR
-- Containerization: Docker
-- Tools: AWS CLI
+- **Cloud Provider:** AWS
+- **Container Registry:** Amazon ECR
+- **Containerization:** Docker
+- **Tools:** AWS CLI
 
 ## Prerequisites
 
