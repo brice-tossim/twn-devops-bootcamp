@@ -8,7 +8,7 @@ A Pipeline project in Jenkins allows defining the entire build process as code (
 
 ## Prerequisites
 
-Before configuring the Freestyle project, ensure the general configuration steps outlined in the [General Configuration Document](./1_general_config.md) are completed, including GitHub and Docker registry credential setup.
+Before configuring the Pipeline project, ensure the general configuration steps outlined in the [General Configuration Document](./1_general_config.md) are completed, including GitHub and Docker registry credential setup.
 
 ## Maven Installation
 
