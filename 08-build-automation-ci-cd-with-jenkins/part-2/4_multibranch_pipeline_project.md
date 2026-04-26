@@ -25,3 +25,6 @@ This setup enables continuous integration by automatically executing builds for 
 
 - "Resource not accessible by personal access token" (HTTP 403)
 During the repository scan, if the log displays an error indicating that the resource is not accessible, it is likely a permissions issue with the GitHub token. To resolve this, I ensured the fine-grained personal access token in GitHub was granted "Pull requests" permissions. This permission is necessary for Jenkins to successfully enumerate and discover all branches within the repository.
+
+- "No Jenkinsfile found" for branches that contain a `Jenkinsfile`
+If a branch contains a `Jenkinsfile` but Jenkins is not recognizing it, ensure the file is correctly named and located at the root of the branch. Additionally, verify that the file has the correct syntax and is accessible by the Jenkins user.
