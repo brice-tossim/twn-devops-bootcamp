@@ -221,7 +221,7 @@ The script logs in to Docker Hub, pulls the freshly built image, stops and remov
 
 ## Verification
 
-- Pushed a change to the `feat/add-deployment-stage-into-aws-ec2-server` branch and verified that the full pipeline executed successfully through the Jenkins UI.
+- Pushed a change to the `feat/use-compose-file-to-deploy-on-aws-ec2-server` branch and verified that the full pipeline executed successfully through the Jenkins UI. If the GitHub webhook is not configured (for example, when the Jenkins droplet is recreated on each session to save costs), the pipeline can alternatively be triggered manually by clicking the "Scan Repository Now" button under the multibranch pipeline configuration.
 - Accessed the deployed application from a browser using the EC2 public IP and the exposed port:
 
 ```text
@@ -235,4 +235,3 @@ http://<ec2-public-ip>:8080
   This happens when the Jenkins server public IP is not allowed in the inbound rules of the EC2 instance's security group. Without that rule, SSH connections from Jenkins to the EC2 instance are silently dropped, and the `scp` or `ssh` command in the deploy stage waits until the connection times out, causing the pipeline to fail.
 
   Make sure to add an inbound SSH (port 22) rule for the Jenkins server public IP in the EC2 security group from the AWS console, as described in the [EC2 Security Group Configuration](#ec2-security-group-configuration) section.
-  
