@@ -1,4 +1,4 @@
-# Kubernetes (K8s)
+# Quick notes for me about K8s
 
 ## Components
 
