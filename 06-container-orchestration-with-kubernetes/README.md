@@ -51,7 +51,7 @@
     - **Mounts what the pod needs**. Attaches volumes, injects ConfigMaps/Secrets as files or env vars, sets up the pod's filesystem before the container starts.
   - Kube-proxy: Routes requests from a Service IP to one of its backing pod IPs (load-balanced across them).
 - **Control plane**:
-  - **API server**: The entrypoint for all requests to the cluster. Can be operated through CLI, UI, client, API, etc. It validates and processes the requests and updates the state of the cluster accordingly.
+  - **API server**: The entrypoint for all requests to the cluster. Can be operated through CLI (kubectl), UI, client, API, etc. It validates and processes the requests and updates the state of the cluster accordingly.
   - **Scheduler**: Responsible for assigning pods to worker nodes based on resource availability and other constraints. Example: a new pod needs 2 CPU + 4 GB RAM, with a GPU. Scheduler looks at all worker nodes, filters out the ones without a GPU or enough free resources, scores the rest, and picks the best.
   - **Controller manager**: Runs a bunch of controllers that ensure the desired state of the cluster is maintained.
   
