@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mosquitto-depl
+  namespace: mosquitto-app-secure
+  labels:
+    app: mosquitto
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mosquitto
+  template:
+    metadata:
+      labels:
+        app: mosquitto
+    spec:
+      containers:
+      - name: mosquitto
+        image: eclipse-mosquitto:latest
+        ports:
+          - containerPort: 1883
+        volumeMounts:
+        - name: mosquitto-config
+          mountPath: "/mosquitto/config"
+          readOnly: true
+        - name: mosquitto-passwd
+          mountPath: "/etc/mosquitto/password_file"
+          subPath: password_file
+          readOnly: true
+      volumes:
+      - name: mosquitto-config
+        configMap:
+          name: mosquitto-cm
+      - name: mosquitto-passwd
+        secret:
+          secretName: mosquitto-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mosquitto-svc
+  namespace: mosquitto-app-secure
+  labels:
+    app: mosquitto
+spec:
+  type: LoadBalancer
+  selector:
+    app: mosquitto
+  ports:
+    - protocol: TCP
+      port: 1883
+      targetPort: 1883
+      nodePort: 30001
+          
