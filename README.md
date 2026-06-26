@@ -1,9 +1,9 @@
 # TWN DevOps Bootcamp
 
-As a Senior Software Engineer, I created this repository to document my journey mastering modern infrastructure and deployment practices while following the TWN DevOps Bootcamp. Housing ~60 hands-on projects, this space bridges the gap between application development and scalable DevOps engineering.
+As a Senior Software Engineer, I created this repository to document how I'm extending years of software engineering into cloud-native DevOps and infrastructure, following the TWN DevOps Bootcamp. The bootcamp spans roughly 60 hands-on projects across 15 modules. I'm working through them and documenting each as I build it, so this repository grows as I progress.
 
-### Key Technologies Explored
-Throughout these projects, I focus heavily on industry-standard DevOps tools and cloud-native architectures, including:
+### Technologies Covered by the Bootcamp
+These projects work with industry-standard DevOps tools and cloud-native architectures, including:
 - **Containerization & Orchestration:** Docker, Kubernetes (AWS EKS, Linode LKE), Helm
 - **Cloud Infrastructure (AWS):** EC2, ECR, Fargate, S3
 - **Infrastructure as Code & Automation:** Terraform, Ansible
@@ -16,10 +16,10 @@ To make navigation easy, this repository is organized hierarchically. Each modul
 ```text
 twn-devops-bootcamp/
 ├── module-name/
-│   ├── project-1/
+│   ├── part-1/
 │   │   ├── ... (project source code and configurations)
 │   │   └── README.md (project purpose, notes, and learnings)
-│   ├── project-2/
+│   ├── part-2/
 │   │   ├── ... (project source code and configurations)
 │   │   └── README.md
 │   └── ...
