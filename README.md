@@ -15,15 +15,15 @@ To make navigation easy, this repository is organized hierarchically. Each modul
 
 ```text
 twn-devops-bootcamp/
-├── module-name/
-│   ├── part-1/
+├── 01-module-name/
+│   ├── 01-descriptive-project-name/
 │   │   ├── ... (project source code and configurations)
 │   │   └── README.md (project purpose, notes, and learnings)
-│   ├── part-2/
+│   ├── 02-another-descriptive-project-name/
 │   │   ├── ... (project source code and configurations)
 │   │   └── README.md
 │   └── ...
-├── another-module/
+├── 02-another-module/
 └── ...
 ```
 

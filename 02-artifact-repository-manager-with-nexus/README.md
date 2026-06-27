@@ -23,7 +23,7 @@ I also created a dedicated Nexus user with the required permissions and publishe
 
 ## Nexus setup
 
-- Created an admin user for server management and a separate `nexus` user to run the nexus service with the appropriate ownership on `/opt/nexus` and `/opt/sonatype-work`. This process was previously covered in this [project](https://github.com/brice-tossim/twn-devops-bootcamp/tree/main/05-cloud-and-infrastructure-as-service-basics/project-1).
+- Created an admin user for server management and a separate `nexus` user to run the nexus service with the appropriate ownership on `/opt/nexus` and `/opt/sonatype-work`. This process was previously covered in this [project](../01-cloud-and-infrastructure-as-service-basics/01-deploy-app-on-digitalocean-droplet).
 - Downloaded, extracted, and started nexus from `/opt`, then verified that the Java process was listening on the expected port.
 - The following commands were executed using the admin user, not the root user:
 

@@ -14,7 +14,7 @@ In this project, I configured a GitHub webhook to automatically trigger Jenkins 
 
 ## Prerequisites
 
-- A running Jenkins server (the Jenkins server used in this project was deployed as a Docker container on a DigitalOcean Droplet, as covered in this [project](https://github.com/brice-tossim/twn-devops-bootcamp/tree/main/08-build-automation-ci-cd-with-jenkins/part-1)).
+- A running Jenkins server (the Jenkins server used in this project was deployed as a Docker container on a DigitalOcean Droplet, as covered in this [project](../01-install-jenkins-on-digitalocean)).
 - If a firewall is configured on the Jenkins server, ensure that all IPv4 and IPv6 traffic is allowed on the Jenkins port. Otherwise, GitHub won't be able to deliver webhook events to Jenkins.
 
 ## GitHub Plugin Installation
@@ -35,7 +35,7 @@ docker restart jenkins
 
 ## GitHub Personal Access Token Permissions
 
-A GitHub personal access token was previously created to allow Jenkins to manually trigger builds on repository branches (covered in this [project](https://github.com/brice-tossim/twn-devops-bootcamp/blob/main/08-build-automation-ci-cd-with-jenkins/part-2/1_general_config.md)). To enable webhook management, the following permissions must be set on the token:
+A GitHub personal access token was previously created to allow Jenkins to manually trigger builds on repository branches (covered in this [project](../02-build-ci-pipeline-with-jenkins/1_general_config.md)). To enable webhook management, the following permissions must be set on the token:
 
 - **Commit statuses:** Read and write
 - **Contents:** Read and write

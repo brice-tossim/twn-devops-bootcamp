@@ -19,7 +19,7 @@ The project used in this pipeline lives on the [`feat/push-onto-aws-ecr-and-depl
 
 ## Prerequisites
 
-This project builds directly on the previous [Docker Compose CI/CD project](https://github.com/brice-tossim/twn-devops-bootcamp/tree/main/09-aws-services/part-3) and only highlights the differences. Make sure all the steps from that project (multibranch pipeline configuration, SSH credential, SSH Agent plugin, EC2 instance setup including Docker and Docker Compose installation, EC2 security group rules) are completed before applying the changes below.
+This project builds directly on the previous [Docker Compose CI/CD project](../03-cicd-deploy-to-ec2-with-docker-compose) and only highlights the differences. Make sure all the steps from that project (multibranch pipeline configuration, SSH credential, SSH Agent plugin, EC2 instance setup including Docker and Docker Compose installation, EC2 security group rules) are completed before applying the changes below.
 
 In addition, a new EC2 instance was provisioned for this project, following the same setup steps as in the previous projects (instance creation, SSH credential in Jenkins, security group rules for SSH from the Jenkins IP and inbound traffic on port 8081).
 

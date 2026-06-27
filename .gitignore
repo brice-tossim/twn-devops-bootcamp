@@ -1,5 +1,6 @@
 .vscode
 twn_projects_overview_3_0.pdf
 .DS_Store
+.fuse_hidden*
 
 *-kubeconfig.yaml

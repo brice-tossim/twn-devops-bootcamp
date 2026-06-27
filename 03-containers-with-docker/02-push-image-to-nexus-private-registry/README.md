@@ -55,7 +55,7 @@ docker exec -it nexus cat /nexus-data/admin.password
 
 - Set up a custom Nexus role containing privileges to view each of the three Docker repositories (e.g `nx-repository-view-docker-<repo-name>-*`).
 
-- Assigned this role to a dedicated Nexus user for authenticated Docker registry access (previously did [here](https://github.com/brice-tossim/twn-devops-bootcamp/tree/main/06-artifact-repository-manager-with-nexus#nexus-user-configuration)).
+- Assigned this role to a dedicated Nexus user for authenticated Docker registry access (previously did [here](../../02-artifact-repository-manager-with-nexus#nexus-user-configuration)).
 
 - Enabled "Docker Bearer Token Realm" in the Nexus security settings (Settings > Security > Realms) to allow authentication via the Docker CLI.
 

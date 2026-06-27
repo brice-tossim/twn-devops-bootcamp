@@ -19,7 +19,7 @@ The project used in this pipeline lives on the [`feat/use-compose-file-to-deploy
 
 ## Prerequisites
 
-The full setup of this pipeline is documented in the previous [Docker-only project](https://github.com/brice-tossim/twn-devops-bootcamp/tree/main/09-aws-services/part-2), and this document only highlights the differences. Make sure all the steps from the previous project (EC2 instance setup, EC2 security group configuration, SSH credential configuration, SSH Agent plugin installation, and the multibranch pipeline configuration) are completed before applying the changes below.
+The full setup of this pipeline is documented in the previous [Docker-only project](../02-cicd-deploy-to-ec2-with-docker), and this document only highlights the differences. Make sure all the steps from the previous project (EC2 instance setup, EC2 security group configuration, SSH credential configuration, SSH Agent plugin installation, and the multibranch pipeline configuration) are completed before applying the changes below.
 
 ## Docker Compose Installation on the EC2 Server
 

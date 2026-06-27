@@ -16,8 +16,8 @@ The pipeline runs against the `feat/dynamic-image-versioning` branch of the proj
 
 ## Prerequisites
 
-- A Multibranch Pipeline project configured in Jenkins (covered in this [project](https://github.com/brice-tossim/twn-devops-bootcamp/blob/main/08-build-automation-ci-cd-with-jenkins/part-2/4_multibranch_pipeline_project.md)).
-- GitHub and Docker registry credentials previously set in the Jenkins credential store (covered in this [project](https://github.com/brice-tossim/twn-devops-bootcamp/blob/main/08-build-automation-ci-cd-with-jenkins/part-2/1_general_config.md)).
+- A Multibranch Pipeline project configured in Jenkins (covered in this [project](../02-build-ci-pipeline-with-jenkins/4_multibranch_pipeline_project.md)).
+- GitHub and Docker registry credentials previously set in the Jenkins credential store (covered in this [project](../02-build-ci-pipeline-with-jenkins/1_general_config.md)).
 - The [Ignore Committer Strategy](https://plugins.jenkins.io/ignore-committer-strategy/) plugin installed in Jenkins. This plugin prevents an infinite webhook trigger loop that would otherwise occur because the pipeline commits back to the same branch that triggered it.
 
 ## Multibranch Pipeline Configuration

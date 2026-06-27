@@ -16,12 +16,12 @@ In this project, I provisioned an Ubuntu Droplet on DigitalOcean and deployed Je
 
 - Provisioned a DigitalOcean Droplet with a minimum of 4 GB RAM and 2 vCPUs.
 - Configured SSH key access and allowed inbound traffic on port 8080 for the Jenkins web interface.
-- Created a dedicated admin user with `sudo` privileges for server management and package installation. This [doc](https://github.com/brice-tossim/twn-devops-bootcamp/blob/main/05-cloud-and-infrastructure-as-service-basics/project-1/README.md#create-users) covers the user creation process.
+- Created a dedicated admin user with `sudo` privileges for server management and package installation. This [doc](../../01-cloud-and-infrastructure-as-service-basics/01-deploy-app-on-digitalocean-droplet/README.md#create-users) covers the user creation process.
 
 ## Server Preparation
 
 - Installed Docker and Docker Compose on the server.
-- Added the admin user to the `docker` group to enable interaction with the Docker daemon without root privileges. This [doc](https://github.com/brice-tossim/twn-devops-bootcamp/blob/main/07-containers-with-docker/part-2/README.md#docker-and-nexus-setup) covers the group addition process.
+- Added the admin user to the `docker` group to enable interaction with the Docker daemon without root privileges. This [doc](../../03-containers-with-docker/02-push-image-to-nexus-private-registry/README.md#docker-and-nexus-setup) covers the group addition process.
 - Installed the `unzip` utility to extract the Jenkins deployment files:
 
 ```sh

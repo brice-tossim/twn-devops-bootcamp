@@ -13,7 +13,7 @@ In this project, I created and configured an EC2 instance on AWS, installed Dock
 
 ## Prerequisites
 
-The application image was already available in my private Docker Hub repository. I used [this repository](https://github.com/brice-tossim/twn-java-maven-app.git) and pushed the image via a Jenkins CI pipeline configured in [this branch](https://github.com/brice-tossim/twn-devops-bootcamp/tree/main/08-build-automation-ci-cd-with-jenkins/part-5) (the full documentation is explained there).
+The application image was already available in my private Docker Hub repository. I used [this repository](https://github.com/brice-tossim/twn-java-maven-app.git) and pushed the image via a Jenkins CI pipeline configured in [this branch](../../04-build-automation-ci-cd-with-jenkins/05-auto-increment-app-version) (the full documentation is explained there).
 
 ## EC2 Instance Creation
 

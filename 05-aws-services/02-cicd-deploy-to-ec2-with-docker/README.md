@@ -26,8 +26,8 @@ The project used in this pipeline lives on the [`feat/add-deployment-stage-into-
 
 ## Prerequisites
 
-- The CI pipeline from the previous project is fully configured. The CI pipeline (incrementing the patch version, running tests, building the JAR, pushing the Docker image, and committing the version change) was set up and documented in this [project](https://github.com/brice-tossim/twn-devops-bootcamp/tree/main/08-build-automation-ci-cd-with-jenkins/part-5). This project extends that pipeline by adding the deployment stage only.
-- An EC2 instance is already provisioned and ready to receive a Docker image. The EC2 setup (instance creation, SSH connection, Docker installation) was previously covered in this [project](https://github.com/brice-tossim/twn-devops-bootcamp/blob/main/09-aws-services/part-1/README.md), up to and including the [Docker Installation](https://github.com/brice-tossim/twn-devops-bootcamp/blob/main/09-aws-services/part-1/README.md#docker-installation) section. The "Image Pull and Container Execution" section is replaced by the deployment stage configured in this project.
+- The CI pipeline from the previous project is fully configured. The CI pipeline (incrementing the patch version, running tests, building the JAR, pushing the Docker image, and committing the version change) was set up and documented in this [project](../../04-build-automation-ci-cd-with-jenkins/05-auto-increment-app-version). This project extends that pipeline by adding the deployment stage only.
+- An EC2 instance is already provisioned and ready to receive a Docker image. The EC2 setup (instance creation, SSH connection, Docker installation) was previously covered in this [project](../01-deploy-app-on-ec2-manually/README.md), up to and including the [Docker Installation](../01-deploy-app-on-ec2-manually/README.md#docker-installation) section. The "Image Pull and Container Execution" section is replaced by the deployment stage configured in this project.
 
 ## How the Deployment Works
 
@@ -181,7 +181,7 @@ Note: Replace `<your-docker-hub-username>/<your-image-name>` with the Docker Hub
 
 ## Deploy Stage Breakdown
 
-The first four stages and the final commit stage were already covered in the previous [dynamic versioning project](https://github.com/brice-tossim/twn-devops-bootcamp/tree/main/08-build-automation-ci-cd-with-jenkins/part-5). The breakdown below focuses on the new `Deploy on AWS EC2` stage.
+The first four stages and the final commit stage were already covered in the previous [dynamic versioning project](../../04-build-automation-ci-cd-with-jenkins/05-auto-increment-app-version). The breakdown below focuses on the new `Deploy on AWS EC2` stage.
 
 - **Wrapped the deployment instructions in Docker credentials:** The `withCredentials` block exposes the Docker Hub username and password as environment variables. These credentials are required because the EC2 instance must authenticate against the private Docker Hub repository before pulling the image.
 
